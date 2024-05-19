@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DBE2EF;
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow-x: hidden;
+}
+header{
+    flex-basis: 15%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px solid #112D4E;
+}
+h1{
+    font-size: 2.7rem;
+    margin-top: 20px;
+    color: #112D4E;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-basis: 75%;
+    width: 100%;
+    background-color: #F9F7F7;
+}
+.side-left{
+    flex-basis: 20%;
+    height: 100%;
+    background-color: #112D4E;
+}
+.side-right{
+    flex-basis: 20%;
+    height: 100%;
+    background-color: #112D4E;
+}
+.side-middle{
+    flex-basis: 60%;
+    height: 100%;
+}
+.to-do{
+    width: 100%;
+    height: 100%;
+}
+#text-box{
+    width: 100%;
+    height: 45px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    font-weight: 600;
+    border: none;
+    background-color: #DBE2EF;
+}
+.things-to-do{
+    width: 100%;
+    background-color: #3F72AF;
+    padding: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #112D4E;
+    border-top: 2px solid #112D4E;
+    transition: ease-in-out 0.5s;
+}
+.things-to-do>.delete{
+    position: absolute;
+    right: 0;
+    width: 5%;
+    min-width: 50px;
+    height: 100%;
+    border: none;
+    background-color: #FF204E;
+    border-left: 2px solid #112D4E;
+    color: #F9F7F7;
+    transition: all 0.5s;
+}
+.things-to-do>.done{
+    position: absolute;
+    right: 45px;
+    width: 5%;
+    min-width: 50px;
+    height: 100%;
+    border: none;
+    background-color: #C3FF93;
+    border-left: 2px solid #112D4E;
+    color: #112D4E;
+    transition: all 0.5s;
+}
+.delete:hover{
+    background-color: #A0153E;
+    font-size: 1rem;
+}
+.done:hover{
+    background-color: #65B741;
+    font-size: 1rem;
+}
+footer{
+    flex-basis: 10%;
+    width: 100%;
+    text-align: center;
+    border-top: 10px solid #112D4E;
+}
+footer>h2{
+    font-size: 1rem;
+    color: #3F72AF;
+    margin-top: 20px;
+}
+footer>h2>span{
+    color: #112D4E;
+    letter-spacing: 1px;
+}
+.done-click{
+    text-decoration: line-through;
+}
+@media(max-width:870px){
+    .side-middle{
+        flex-basis: 100%;
+    }
+    .side-right{
+        flex-basis: 0;
+    }
+    .side-left{
+        flex-basis: 0;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+}
