@@ -121,6 +121,7 @@ footer>h2>span{
 }
 .done-click{
     text-decoration: line-through;
+    color: #C3FF93;
 }
 @media(max-width:870px){
     .side-middle{
